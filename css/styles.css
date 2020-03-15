@@ -1,0 +1,82 @@
+body{
+  color:#40514E;
+  margin: 0;/*this 0 means marging all four sides set to 0*/
+    text-align:center;
+    font-family: 'Merriweather', serif;
+}        /*note: whenever its 0 u dont have to specify its unit like px etc.*/
+h1{      /*if font-size says 1em (em means M.) when it says 1em then its the width of the capital letter M. in modern days 1em means 16px.  16px = 100% = 1em*/ /*note: when using dynamic values like %, em the value will be inherited based on the value mentioned in its parent & adds the value to the child value. ex: if u mention 3em in body n 1em in h1 then h1 will inherit 3em from body & adds 1em n it becomes 4em. but note: if u use px then whatver child has it takes child value n not the parent value coz these r static values. note: if u use rem instead of em it says ignore all parent settings and use rem value setting from the child itself. this feature is available in css3 the latest version.*/
+  font-size: 4.375rem; /*100% means 16px. using % means its a dynamic font size. it changes size based on zoom in or out settings prefered by user on their system. if u pixels this wont change as user wants. if u want 90px then 90/16*100 = 562.5%.*/
+  margin:50px auto 0 auto;  /*for font-sizes recommended to use is rem.*/
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  line-height: 2; /*default 1 and 2 will double space and give the space between h1 text to whatever top of that text and bottom of the text.*/
+}
+
+h2{
+  color: #66BFBF;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    color:#11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-container{
+  background-color: #d7fffd;
+  position:relative;
+  padding-top: 100px; /*this helps our content to move little down*/
+}
+
+
+.pro{
+  text-decoration:underline;
+}
+
+.top-cloud{
+  position:absolute;
+  right:420px;
+  top:50px;
+}
+.bottom-cloud{
+  position:absolute;
+  left:437px;
+  bottom:300px;
+}
+
+.attribution{
+  font-size: 8px;
+}
+
+a{
+  color:#11999E;
+}
+
+.skill-row{
+  width: 50%; /*this helps to reduce the space it occupies of this class divs.*/
+  margin:120px auto 120px auto; /*lets to space between two skills n above title.*/ /*top, left, bottom, right*/
+  text-align: left; /*making ur text in skillrow class alone to left.
+  line-height: 2; /*for our text to be more space between lines.*/
+}
+
+.html_img{
+  width:25%; /*img is 25% less to its parent's width(skill-row).*/
+  float: left; /*float will make image float to left of the text & make the text wrap around it.*/
+  margin-right: 30px; /*helps to give some space between image and text next to the img we placed.*/
+}
+
+.css_img{
+  width:25%;
+  float:right;
+  margin-left: 30px;
+}
+/*
+.skill1{
+  clear:left;
+}
+
+.skill2{
+  clear:right;
+}
+*/
